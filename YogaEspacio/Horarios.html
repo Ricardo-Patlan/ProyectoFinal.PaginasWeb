@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoga Espacio</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+
+  <style>
+
+
+
+.dropdown-menu {
+    z-index: 1050; 
+  }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 112px; 
+    }
+    .img-inferior {
+  height: 500px;
+  
+  object-fit: cover;
+}
+
+
+.menu-naranja {
+    background: linear-gradient(to right, #ff6a00, #ff9900);
+    z-index: 500
+  }
+
+    .navbar-nav .nav-link,
+    .subnav .nav-link {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .navbar-nav .nav-link {
+      color: black;
+    }
+
+    .subnav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .subnav .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      color: black;
+    }
+
+    .btn-inicio {
+      white-space: nowrap;
+    }
+
+    .search-right {
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
+      z-index: 1030;
+    }
+    .btn-articulos {
+  background: linear-gradient(to right, #44c28a, #6ad28a);
+  color: white;
+  padding: 12px 32px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.btn-articulos:hover {
+  background: linear-gradient(to right, #3db87d, #5ecf7f);
+  color: white;
+}
+
+
+    @media (max-width: 991px) {
+      .search-right {
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+ <div class="search-right">
+    <i class="bi bi-search fs-5"></i>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm fixed-top">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <span class="logo-text me-3">YOGA ESPACIO</span>
+        <img src="/assects/circulo1.png" alt="circulo 1" height="12" class="me-1">
+        <img src="/assects/circulo2.png" alt="circulo 2" height="12" class="me-1">
+        <img src="/assects/circulo3.png" alt="circulo 3" height="12">
+      </div>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
+        <ul class="navbar-nav d-flex flex-row flex-wrap gap-3 mx-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Clases y Horarios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Horarios.html">Coyoacán</a></li>
+              <li><a class="dropdown-item" href="/Horarios.html">Del Valle</a></li>
+              <li><a class="dropdown-item" href="/Horarios.html">Satélite</a></li>
+              <li><a class="dropdown-item" href="#">Clases de Yoga vía Zoom</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Yoga</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tipos de Clase</a></li>
+              <li><a class="dropdown-item" href="#">Talleres</a></li>
+              <li><a class="dropdown-item" href="#">Formación de Maestros</a></li>
+              <li><a class="dropdown-item" href="#">Retiros</a></li>
+              <li><a class="dropdown-item" href="/Maestros.html">Maestros</a></li>
+              <li><a class="dropdown-item" href="#">Yogapedia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Meditación</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Meditación para la Vida</a></li>
+              <li><a class="dropdown-item" href="#">Talleres Regulares</a></li>
+              <li><a class="dropdown-item" href="#">Talleres Especiales</a></li>
+              <li><a class="dropdown-item" href="#">Cursos Especiales</a></li>
+              <li><a class="dropdown-item" href="#">Retiros</a></li>
+              <li><a class="dropdown-item" href="#">Mindfulness en la educación</a></li>
+              <li><a class="dropdown-item" href="#">Maestros</a></li>
+              <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terapias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formación de Maestros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="navbar navbar-expand-lg menu-naranja py-2 fixed-top" style="top: 56px;">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSub" aria-controls="navbarSub" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSub">
+        <ul class="nav subnav navbar-nav flex-row flex-wrap">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Yoga Espacio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+              <li><a class="dropdown-item" href="#">Método Yoga Espacio</a></li>
+              <li><a class="dropdown-item" href="#">Nuestras Sedes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown">Jñana Dakini</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Clases, Talleres y Cursos</a></li>
+              <li><a class="dropdown-item" href="#">Artículos</a></li>
+              <li><a class="dropdown-item" href="#">Acerca de mí</a></li>
+              <li><a class="dropdown-item" href="#">Videos</a></li>
+              <li><a class="dropdown-item" href="#">Libros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Yogapedia</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Revista Yoga-e</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#">Boletín</a></li>
+        </ul>
+  
+        <a href="#" class="btn btn-link text-white text-decoration-none btn-inicio mt-2 mt-lg-0">
+          <i class="bi bi-person-fill me-1"></i> Iniciar Sesión
+        </a>
+      </div>
+    </div>
+  </nav>
+<br>
+<br>
+
+  <div class="text-center">
+    <div class="bg-info text-white fw-bold rounded-pill py-2 px-4 d-inline-block">
+      HORARIOS PRESENCIALES
+    </div>
+  
+    <div class="mt-4">
+      <h2 class="text-info">Yoga Espacio Satélite</h2>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <img src="/assects/horarios.png" class="img-fluid" alt="Horario de clases">
+  </div>
+
+
+
+  <div class="container my-5">
+
+    <!-- Tarjetas superiores -->
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/assects/Detalles_Horarios.png" class="img-fluid rounded" alt="Sala de yoga">
+      </div>
+    </div>
+  
+    <!-- Información de clases -->
+    <div class="border p-4 mt-4">
+      <h5>CLASES PRESENCIALES</h5>
+      <ul>
+        <li>1 clase: $200</li>
+        <li>5 clases: $900</li>
+        <li>8 clases: $1200</li>
+      </ul>
+      <h6>Domingos</h6>
+      <ul>
+        <li>10:00am - $200</li>
+      </ul>
+      <p>Tu pago lo puedes hacer directamente en la sede o por transferencia.
+        Tu lugar queda reservado al hacer tu pago.
+        Selecciona tu clase en el horario y llama al: 55-5363-7101 | WhatsApp: 55-2406-3721</p>
+    </div>
+  
+    <!-- Información adicional -->
+    <div class="mt-4">
+      <h6>Más información</h6>
+      <ul class="list-unstyled">
+        <li>📞 555-1234</li>
+        <li>✉️ correo@ejemplo.com</li>
+        <li>📍 Dirección completa aquí</li>
+      </ul>
+
+      
+    </div>
+  
+  </div>
+  
+
+
+  
+  <section class="container text-center py-5">
+    <div class="row justify-content-center g-5">
+      
+      <div class="col-12 col-lg-6">
+        <h6 class="fw-bold">CLASES</h6>
+        <h2 class="text-danger">PRESENCIALES</h2>
+        <p class="mb-4">Conoce los horarios</p>
+  
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center flex-md-row">
+          <a href="/Horarios.html" class="btn btn-info text-white px-4 py-2 rounded-pill">Coyoacán</a>
+          <a href="/Horarios.html" class="btn btn-info text-white px-4 py-2 rounded-pill">Del Valle</a>
+          <a href="/Horarios.html" class="btn btn-info text-white px-4 py-2 rounded-pill">Satélite</a>
+        </div>
+      </div>
+  
+      <div class="col-12 col-lg-4">
+        <h6 class="fw-bold">CLASES</h6>
+        <h2 class="text-primary">POR ZOOM</h2>
+        <p class="mb-4">Conoce los horarios</p>
+  
+        <a href="#" class="btn btn-primary text-white px-4 py-2 rounded-pill">Ver Horarios</a>
+      </div>
+  
+    </div>
+  </section>
+
+
+ 
+  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1050;">
+    <a href="https://wa.me/525512345678" target="_blank" class="text-decoration-none text-dark text-end d-block">
+      <div class="bg-white shadow p-2 rounded d-flex align-items-center gap-2">
+        <div class="text-end small">
+          <div class="text-muted">¿Necesitas información?</div>
+          <strong>Envíanos un WhatsApp</strong>
+        </div>
+        <img src="/assects/WFijo.png" alt="WhatsApp" style="height: 45px;">
+      </div>
+    </a>
+  </div>
+  
+
+
+  
+<footer class="bg-light text-dark pt-5 pb-4 mt-5 border-top">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+  
+        <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+            
+            <img src="/assects/logo.png" alt="Yoga Espacio" class="mb-3" style="max-height: 40px;">
+          
+            
+            <div class="d-flex justify-content-center justify-content-md-start gap-2">
+              <img src="/assects/circulo1.png" alt="circulo naranja" height="12">
+              <img src="/assects/circulo2.png" alt="circulo rojo" height="12">
+              <img src="/assects/circulo3.png" alt="circulo vino" height="12">
+            </div>
+          </div>
+          
+       
+        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+          <h6 class="text-danger fw-bold mb-3">Síguenos en redes</h6>
+          <ul class="list-unstyled">
+            <li class="mb-1"><i class="bi bi-facebook me-1 text-primary"></i> Facebook</li>
+            <li class="mb-1"><i class="bi bi-twitter me-1 text-info"></i> Twitter</li>
+            <li><i class="bi bi-linkedin me-1 text-primary"></i> LinkedIn</li>
+          </ul>
+        </div>
+  
+        
+        <div class="col-12 col-md-4 text-center text-md-end">
+          <img src="/assects/Logo3.png" alt="IDVENTIVA" style="max-height: 50px; min-height: 50px;" class="mb-2">
+          <p class="small mb-0">PROUDLY CRAFTED BY MEXICAN<br>COURAGEOUS CREATIVES</p>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+</body>
+</html>
